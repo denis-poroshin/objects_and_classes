@@ -1,12 +1,16 @@
 public class Author {
     private String name;
-    private String name1;
+    private String surneame;
 
-    public Author(String name, String name1){
-        this.name = name + " " +  name1; // Может сдесь нужно по другому
+    public Author(String name, String surname){
+        this.name = name;
+        this.surneame = surname;
     }
-    public String getAuthor(){
+    public String getName(){
         return this.name;
+    }
+    public String getSurneame(){
+        return this.surneame;
     }
 
 
