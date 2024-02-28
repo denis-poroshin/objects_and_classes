@@ -23,5 +23,6 @@ public class Book {
     }
     public void setYear(int year){
         this.year = year;
+
     }
 }

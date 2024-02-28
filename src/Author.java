@@ -13,6 +13,4 @@ public class Author {
         return this.surneame;
     }
 
-
-
 }

@@ -14,9 +14,5 @@ public class App {
         System.out.println("Год публикации книги изменен: " + book1.getYear());
 
 
-
-
-
-
     }
 }
