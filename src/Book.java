@@ -35,7 +35,7 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(bookTitle, book.bookTitle);
+        return Objects.equals(bookTitle, book.bookTitle) && Objects.equals(author, book.author);
     }
 
     @Override
