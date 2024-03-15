@@ -5,9 +5,10 @@ public class App {
         Author author1 = new Author("Александр", "Пушкин");
         Author author2 = new Author("Стивин", "Кинг");
         Library library = new Library(10);
-        library.addBook(author, "Война и мир",  1867);
-        library.addBook(author1,  "Евгений Онегин",  1833);
-        library.addBook(author2, "Сияние", 1980);
+
+        library.addBook(new Book(author, "Война и мир",  1867));
+        library.addBook(new Book(author1,  "Евгений Онегин",  1833));
+        library.addBook(new Book(author2, "Сияние", 1980));
 
 
         library.printAllBook(); // печать всех книг

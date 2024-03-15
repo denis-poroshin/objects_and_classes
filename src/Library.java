@@ -5,10 +5,10 @@ public class Library {
         this.book = new Book[mas];
 
     }
-    public void addBook(Author author, String bookTitle, int year){
+    public void addBook(Book newBook){
+
         for (int i = 0; i < book.length; i++) {
             if(book[i] == null){
-                Book newBook = new Book(author,bookTitle, year);
                 book[i] = newBook;
                 break;
             }
@@ -20,7 +20,6 @@ public class Library {
                 break;
             }
             System.out.println(book[i].getAuthor() + ": " + book[i].getBookTitle() + ": " + book[i].getYear());
-
         }
     }
     public void printBookByTitle(String bookTitle){
@@ -28,7 +27,7 @@ public class Library {
             if (book[i] == null){
                 break;
             }
-            if (book[i].getBookTitle() == bookTitle){
+            if (book[i].getBookTitle().equals(bookTitle)){
                 System.out.println("Стенд: " + book[i].getAuthor() + " год публикации: " + book[i].getYear());
             }
 
@@ -41,7 +40,7 @@ public class Library {
             if (book[i] == null){
                 break;
             }
-            if(book[i].getBookTitle() == bookTitle){
+            if(book[i].getBookTitle().equals(bookTitle)){
                 book[i].setYear(year);
                 break;
 
